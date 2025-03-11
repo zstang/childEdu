@@ -1,0 +1,143 @@
+<view class="page">
+  <view class="custom-nav">
+    <view class="nav-back" bindtap="handleBack">
+      <text class="back-icon">←</text>
+    </view>
+    <view class="nav-title">问题分类</view>
+  </view>
+
+  <view class="header">
+    <text class="title">您想咨询什么问题？</text>
+    <text class="subtitle">请选择您关注的问题类型</text>
+  </view>
+
+  <view class="problem-list">
+    <!-- 家长专属问题类型 -->
+    <block wx:if="{{userRole === 'parent'}}">
+      <view class="problem-item {{selectedType === 'parenting' ? 'selected' : ''}}"
+            bindtap="selectProblem" 
+            data-type="parenting">
+        <view class="problem-icon">👨‍👩‍👧‍👦</view>
+        <view class="problem-content">
+          <text class="problem-title">亲子关系与孩子养育</text>
+          <text class="problem-desc">教育方法、亲子沟通、行为管理等</text>
+        </view>
+      </view>
+
+      <view class="problem-item {{selectedType === 'marriage' ? 'selected' : ''}}"
+            bindtap="selectProblem" 
+            data-type="marriage">
+        <view class="problem-icon">💑</view>
+        <view class="problem-content">
+          <text class="problem-title">家庭生活</text>
+          <text class="problem-desc">婚姻生活、家庭关系、沟通技巧等</text>
+        </view>
+      </view>
+
+      <view class="problem-item {{selectedType === 'mental' ? 'selected' : ''}}"
+            bindtap="selectProblem" 
+            data-type="mental">
+        <view class="problem-icon">💑</view>
+        <view class="problem-content">
+          <text class="problem-title">其他情绪和心理问题</text>
+          <text class="problem-desc">工作压力、情绪管理、自我认知等</text>
+        </view>
+      </view>
+    </block>
+
+    <!-- 学生专属问题类型 -->
+    <block wx:if="{{userRole === 'student'}}">
+      <view class="problem-item {{selectedType === 'study' ? 'selected' : ''}}"
+            bindtap="selectProblem" 
+            data-type="study">
+        <view class="problem-icon">📚</view>
+        <view class="problem-content">
+          <text class="problem-title">学习问题</text>
+          <text class="problem-desc">学习方法、考试压力、时间管理等</text>
+        </view>
+      </view>
+
+      <view class="problem-item {{selectedType === 'relationship' ? 'selected' : ''}}"
+            bindtap="selectProblem" 
+            data-type="relationship">
+        <view class="problem-icon">👥</view>
+        <view class="problem-content">
+          <text class="problem-title">人际关系</text>
+          <text class="problem-desc">同学关系、师生关系、社交困扰等</text>
+        </view>
+      </view>
+
+      <view class="problem-item {{selectedType === 'mental' ? 'selected' : ''}}"
+            bindtap="selectProblem" 
+            data-type="mental">
+        <view class="problem-icon">👥</view>
+        <view class="problem-content">
+          <text class="problem-title">情绪与心理问题</text>
+          <text class="problem-desc">情绪管理、焦虑、认知困惑等</text>
+        </view>
+      </view>
+
+      <view class="problem-item {{selectedType === 'behave' ? 'selected' : ''}}"
+            bindtap="selectProblem" 
+            data-type="behave">
+        <view class="problem-icon">👥</view>
+        <view class="problem-content">
+          <text class="problem-title">行为问题</text>
+          <text class="problem-desc">攻击行为、成瘾行为、不良习惯等</text>
+        </view>
+      </view>
+    </block>
+
+    <!-- 教师专属问题类型 -->
+    <block wx:if="{{userRole === 'teacher'}}">
+      <view class="problem-item {{selectedType === 'teaching' ? 'selected' : ''}}"
+            bindtap="selectProblem" 
+            data-type="teaching">
+        <view class="problem-icon">🎓</view>
+        <view class="problem-content">
+          <text class="problem-title">教学问题</text>
+          <text class="problem-desc">教学方法、课堂管理、学生辅导等</text>
+        </view>
+      </view>
+
+      <view class="problem-item {{selectedType === 'career' ? 'selected' : ''}}"
+            bindtap="selectProblem" 
+            data-type="career">
+        <view class="problem-icon">💼</view>
+        <view class="problem-content">
+          <text class="problem-title">职业发展</text>
+          <text class="problem-desc">职业规划、专业提升、工作压力等</text>
+        </view>
+      </view>
+
+      <view class="problem-item {{selectedType === 'colleague' ? 'selected' : ''}}"
+            bindtap="selectProblem" 
+            data-type="colleague">
+        <view class="problem-icon">💼</view>
+        <view class="problem-content">
+          <text class="problem-title">人际关系</text>
+          <text class="problem-desc">同事关系、师生关系等</text>
+        </view>
+      </view>
+
+      <view class="problem-item {{selectedType === 'mental' ? 'selected' : ''}}"
+            bindtap="selectProblem" 
+            data-type="mental">
+        <view class="problem-icon">💼</view>
+        <view class="problem-content">
+          <text class="problem-title">情绪与心理问题</text>
+          <text class="problem-desc">情绪管理、自我认知、职业懈怠等</text>
+        </view>
+      </view>
+    </block>
+  </view>
+
+  <view class="button-container">
+    <button class="next-btn" disabled="{{!selectedType}}" bindtap="handleNext">
+      下一步
+    </button>
+    <view class="knowledge-link" bindtap="goToKnowledge">
+      查看知识库
+    </view>
+  </view>
+</view>

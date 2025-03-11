@@ -1,0 +1,37 @@
+<!--pages/user_question/user_question.wxml-->
+<view class="page">
+  <!-- 导航栏 -->
+  <view class="custom-nav">
+    <view class="nav-back" bindtap="handleBack">
+      <text class="back-icon">←</text>
+    </view>
+    <view class="nav-title">输入你的问题</view>
+  </view>
+
+  <!-- 主要内容区域 -->
+  <view class="content">
+    <view class="placeholder-text">
+      <text>请详细描述您的问题，</text>
+      <text>这将帮助我们更好地为您提供帮助...</text>
+    </view>
+    <textarea 
+      class="question-input"
+      placeholder=""
+      maxlength="500"
+      bindinput="handleInput"
+      value="{{questionContent}}"
+      auto-height
+    ></textarea>
+    <view class="word-count">{{currentLength}}/500</view>
+  </view>
+
+  <!-- 底部按钮 -->
+  <view class="button-container">
+    <button 
+      class="next-btn" 
+      disabled="{{!questionContent}}" 
+      bindtap="handleNext">
+      下一步
+    </button>
+  </view>
+</view>

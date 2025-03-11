@@ -1,0 +1,36 @@
+<!--pages/index/who_are_you.wxml-->
+<view class="page">
+  <navigation-bar title="身份选择" back="{{true}}" color="black" background="#FFF"></navigation-bar>
+
+  <view class="title-container">
+    <text class="title">您是以什么身份来访？</text>
+  </view>
+
+  <view class="role-options">
+    <!-- 学生角色 -->
+    <view class="role-item {{selectedRole === 'student' ? 'selected' : ''}}"
+          bindtap="selectRole" 
+          data-role="student">
+      学生
+    </view>
+
+    <!-- 家长角色 -->
+    <view class="role-item {{selectedRole === 'parent' ? 'selected' : ''}}"
+          bindtap="selectRole" 
+          data-role="parent">
+      家长
+    </view>
+
+    <!-- 教师角色 -->
+    <view class="role-item {{selectedRole === 'teacher' ? 'selected' : ''}}"
+          bindtap="selectRole" 
+          data-role="teacher">
+      老师
+    </view>
+  </view>
+
+  <view class="button-container">
+    <button class="chat-btn" bindtap="startDirectChat">直接开聊</button>
+    <button class="consult-btn" bindtap="startConsultation">开始咨询</button>
+  </view>
+</view>

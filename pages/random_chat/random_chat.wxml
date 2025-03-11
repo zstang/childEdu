@@ -1,0 +1,68 @@
+<!--pages/index/random_chat.wxml-->
+<view class="page">
+  <navigation-bar title="在线咨询" back="{{true}}" color="black" background="#FFF"></navigation-bar>
+  
+  <!-- 聊天内容区域 -->
+  <scroll-view 
+    class="chat-container" 
+    scroll-y="true" 
+    scroll-into-view="{{scrollToMessage}}"
+    bindscrolltoupper="onScrollToUpper"
+    upper-threshold="50">
+    
+    <!-- 下拉刷新动画 -->
+    <view class="refresh-container" wx:if="{{isRefreshing}}">
+      <view class="loading"></view>
+      <text>正在加载更多...</text>
+    </view>
+
+    <!-- 消息列表 -->
+    <view class="message-list">
+      <block wx:for="{{messageList}}" wx:key="id">
+        <!-- 时间戳 -->
+        <view class="time-stamp" wx:if="{{item.showTimeStamp}}">
+          {{item.timeStamp}}
+        </view>
+        
+        <!-- 消息气泡 -->
+        <view id="msg-{{item.id}}" 
+              class="message-item {{item.isSelf ? 'self' : 'other'}}">
+          <!-- 头像 -->
+          <image class="avatar" 
+                 src="{{item.avatar}}" 
+                 mode="aspectFill"/>
+          
+          <!-- 消息内容 -->
+          <view class="message-content">
+            <!-- 用户名 -->
+            <view class="username" wx:if="{{!item.isSelf}}">
+              {{item.username}}
+            </view>
+            
+            <!-- 消息气泡 -->
+            <view class="message-bubble">
+              <text class="message-text" user-select="true">{{item.content}}</text>
+            </view>
+          </view>
+        </view>
+      </block>
+    </view>
+  </scroll-view>
+
+  <!-- 输入区域 -->
+  <view class="input-container">
+    <textarea class="text-input" 
+              value="{{inputValue}}"
+              maxlength="500"
+              show-confirm-bar="{{false}}"
+              cursor-spacing="20"
+              fixed="true"
+              auto-height="{{false}}"
+              bindinput="onInput"
+              placeholder="请输入消息..."
+              />
+    <button class="send-btn" 
+            bindtap="sendMessage" 
+            disabled="{{!inputValue}}">发送</button>
+  </view>
+</view>

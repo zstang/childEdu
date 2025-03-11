@@ -1,0 +1,105 @@
+<view class="container">
+  <!-- 顶部导航栏 -->
+  <view class="nav-bar">
+    <view class="back-btn" bindtap="handleBack">
+      <text class="back-icon">←</text>
+    </view>
+    <view class="nav-title">老师咨询的常见问题</view>
+  </view>
+
+  <!-- 内容区域 -->
+  <scroll-view class="content" scroll-y enable-back-to-top>
+    <view class="knowledge-content">
+      <!-- 职业压力相关问题 -->
+      <view class="section">
+        <view class="section-title">一、职业压力相关问题</view>
+        
+        <view class="subsection">
+          <view class="subtitle">1. 教学工作压力</view>
+          
+          <view class="paragraph-group">
+            <view class="subtitle">工作量负担</view>
+            <view class="paragraph">老师通常要承担大量的教学任务，包括备课、授课、批改作业等。例如，一位高中主科教师可能每天要批改上百份作业，还要准备内容丰富的课程，长时间下来会感到身心疲惫。他们可能希望找到有效的时间管理策略来减轻工作负担，或者了解如何合理分配精力以应对高强度的教学工作。</view>
+            <view class="paragraph">随着教育改革的推进，教师需要不断更新教学内容和方法。例如，要求采用新的教学技术，如线上教学平台的熟练运用、新的课程标准下的教学设计等，这增加了教师的工作难度和压力，他们可能会咨询如何快速适应这些教学变革。</view>
+          </view>
+
+          <view class="paragraph-group">
+            <view class="subtitle">教学质量与评价压力</view>
+            <view class="paragraph">学校和家长对教学质量有很高的期望，老师会担心自己的教学效果。比如，在学生成绩不理想或者教学反馈不佳时，老师会感到焦虑和自我怀疑。他们可能想要咨询如何提高教学质量，如何根据学生的不同特点进行个性化教学，以及如何正确对待教学评价等问题。</view>
+            <view class="paragraph">教师还要面对教学成果的量化考核，如升学率、优秀率等指标。对于这些外在的评价标准，他们可能会感到压力巨大，希望找到平衡外在评价和自身教学目标的方法。</view>
+          </view>
+        </view>
+
+        <view class="subsection">
+          <view class="subtitle">2. 学生管理压力</view>
+          
+          <view class="paragraph-group">
+            <view class="subtitle">班级纪律维护</view>
+            <view class="paragraph">维持良好的班级纪律是教师面临的一大挑战。例如，在一些班级中，可能存在调皮捣蛋、不遵守课堂纪律的学生，这会影响教学秩序。老师可能会咨询如何有效地管理班级纪律，如何建立良好的班级规则并让学生自觉遵守，以及如何应对违反纪律的学生等问题。</view>
+            <view class="paragraph">不同年龄段的学生有不同的特点，如小学生可能比较好动、注意力易分散，中学生可能会出现叛逆行为。老师需要根据这些差异来调整自己的管理策略，他们可能会咨询如何更好地理解和适应这些差异。</view>
+          </view>
+
+          <view class="paragraph-group">
+            <view class="subtitle">学生心理和行为问题处理</view>
+            <view class="paragraph">教师要关注学生的心理健康和行为问题。例如，遇到有学生出现抑郁、焦虑等情绪问题，或者有学生出现校园霸凌、自残等行为，老师会感到责任重大但又有些不知所措。他们可能希望了解如何识别学生的心理问题，以及如何进行初步的干预和引导，并且知道何时应该将学生转介给专业的心理机构。</view>
+          </view>
+        </view>
+      </view>
+
+      <!-- 人际关系问题 -->
+      <view class="section">
+        <view class="section-title">二、人际关系问题</view>
+        
+        <view class="subsection">
+          <view class="subtitle">1. 同事关系方面</view>
+          
+          <view class="paragraph-group">
+            <view class="subtitle">合作与竞争关系</view>
+            <view class="paragraph">在学校工作环境中，教师之间既存在合作关系，如共同备课、组织活动等，也存在竞争关系，如评优评先、职称评定等。可能会出现合作不顺畅或者因竞争产生矛盾的情况。例如，在共同开展一个教研项目时，不同教师对教学方法有不同的看法，导致合作出现分歧；或者在职称评定过程中，因为名额有限，教师之间可能会产生紧张的竞争关系。他们可能会咨询如何处理好与同事之间的合作和竞争关系，营造和谐的工作氛围。</view>
+            <view class="paragraph">教师也可能会遇到办公室人际关系问题，如小团体现象、人际冲突等。例如，有些教师感觉自己被其他同事孤立，或者在办公室交流中产生摩擦，他们希望得到改善人际关系的建议。</view>
+          </view>
+
+          <view class="paragraph-group">
+            <view class="subtitle">专业交流与支持</view>
+            <view class="paragraph">教师需要进行专业交流来提升自己的教学水平。但是，有些老师可能会觉得在学校里缺乏足够的专业交流机会，或者不知道如何有效地与其他教师分享教学经验和资源。他们可能会询问如何建立良好的专业交流平台，以及如何从同事那里获得更多的教学支持。</view>
+          </view>
+        </view>
+
+        <view class="subsection">
+          <view class="subtitle">2. 师生关系方面</view>
+          
+          <view class="paragraph-group">
+            <view class="subtitle">师生沟通障碍</view>
+            <view class="paragraph">教师可能会遇到与某些学生沟通不畅的问题。例如，有些学生比较内向，不愿意与老师交流；或者学生对老师有抵触情绪，导致沟通无法有效进行。老师可能希望了解如何打破这种沟通障碍，与学生建立良好的师生关系。</view>
+            <view class="paragraph">不同文化背景、家庭环境的学生有不同的沟通方式和需求，教师需要根据这些差异来调整自己的沟通策略，他们可能会咨询如何更好地理解和适应这些差异。</view>
+          </view>
+
+          <view class="paragraph-group">
+            <view class="subtitle">师生冲突处理</view>
+            <view class="paragraph">在师生之间发生冲突时，如学生公然顶撞老师、对老师的教学安排提出强烈反对等情况，教师需要知道如何妥善处理，既能解决问题，又能维护师生关系。他们可能会寻求应对师生冲突的有效原则和方法。</view>
+          </view>
+        </view>
+      </view>
+
+      <!-- 个人情绪和心理调适问题 -->
+      <view class="section">
+        <view class="section-title">三、个人情绪和心理调适问题</view>
+        
+        <view class="subsection">
+          <view class="subtitle">1. 职业倦怠与成就感缺失</view>
+          <view class="paragraph">长期从事教学工作可能会导致教师出现职业倦怠。例如，教学工作的重复性、学生问题的复杂性等因素，可能会使教师对工作失去热情。他们可能会感到自己的付出没有得到足够的回报，缺乏教学成就感。教师可能会咨询如何重新找回工作的动力和热情，以及如何在日常教学中获得更多的成就感。</view>
+        </view>
+
+        <view class="subsection">
+          <view class="subtitle">2. 情绪管理问题</view>
+          <view class="paragraph">在面对教学压力和人际关系问题时，教师可能会出现情绪管理方面的问题。例如，在课堂上因为学生的调皮而发脾气，事后又感到后悔；或者在与同事、家长发生矛盾时，情绪失控。他们可能希望学习情绪调节的技巧，如深呼吸、情绪表达的合理方式等，以更好地控制自己的情绪。</view>
+        </view>
+
+        <view class="subsection">
+          <view class="subtitle">3. 自我认知和职业发展困惑</view>
+          <view class="paragraph">教师可能会对自己的职业发展产生困惑。例如，在职业生涯的不同阶段，不知道如何进一步提升自己，是选择继续深造、参加培训，还是转换教学领域等。他们也可能会对自己的教学风格和能力产生怀疑，希望得到客观的评估和专业的建议，以明确自己的职业发展方向。</view>
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+</view>

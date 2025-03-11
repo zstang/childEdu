@@ -1,0 +1,159 @@
+<view class="container">
+  <!-- 顶部导航栏 -->
+  <view class="nav-bar">
+    <view class="back-btn" bindtap="handleBack">
+      <text class="back-icon">←</text>
+    </view>
+    <view class="nav-title">学生咨询的常见问题</view>
+  </view>
+
+  <!-- 内容区域 -->
+  <scroll-view class="content" scroll-y enable-back-to-top>
+    <view class="knowledge-content">
+      <!-- 学习方面 -->
+      <view class="section">
+        <view class="section-title">一、学习方面</view>
+        
+        <view class="subsection">
+          <view class="subtitle">1. 学习动力不足</view>
+          <view class="paragraph-group">
+            <view class="paragraph">许多学生可能会出现对学习缺乏兴趣的情况。例如，有些学生从小学到中学一直处于被动学习状态，被家长和老师督促着学习，到了高中或者大学，自主学习的要求提高，他们就会产生动力不足的问题。他们可能会觉得学习是一种负担，不知道学习的意义何在，导致成绩下滑或者厌学情绪。</view>
+            <view class="paragraph">建议学生可以尝试找到自己的学习兴趣，设定学习目标，寻找学习伙伴，建立奖励机制等方式来提高学习动力。</view>
+          </view>
+
+          <view class="paragraph-group">
+            <view class="paragraph">同时，学生也需要了解学习的重要性，学习不仅是为了应付考试，更是为了提升自己的能力和知识。建议学生可以多阅读书籍，参加学习活动，拓展自己的知识面。</view>
+            <view class="paragraph">另外，学生也需要注意自己的学习习惯，避免拖延和懒惰。建议学生可以使用番茄工作法，设定学习计划，保持学习的连贯性。</view>
+          </view>
+        </view>
+
+        <view class="subsection">
+          <view class="subtitle">2. 学习压力过大</view>
+          <view class="paragraph-group">
+            <view class="paragraph">随着学业竞争的加剧，学生面临巨大的压力。比如面临升学考试（中考、高考等）的学生，每天要完成大量的作业、参加各种辅导班。他们可能会出现焦虑、失眠等症状，甚至会因为一次考试失利而产生强烈的挫败感，担心自己无法达到父母或者自己设定的目标。</view>
+            <view class="paragraph">建议学生可以尝试放松自己的心情，多参加户外活动，保持健康的生活方式。同时，学生也需要合理安排自己的学习时间，避免过度学习。</view>
+          </view>
+
+          <view class="paragraph-group">
+            <view class="paragraph">另外，学生也需要注意自己的心理健康，避免过度的压力和焦虑。建议学生可以寻找心理咨询，参加心理健康活动，保持自己的心理健康。</view>
+            <view class="paragraph">同时，学生也需要了解自己的学习能力，避免过度的自我期望。建议学生可以设定合理的学习目标，保持学习的连贯性。</view>
+          </view>
+        </view>
+
+        <view class="subsection">
+          <view class="subtitle">3. 学习困难</view>
+          <view class="paragraph-group">
+            <view class="paragraph">这包括具体学科知识的学习困难。例如，有些学生在数学方面可能存在逻辑思维能力不足的问题，对于复杂的数学公式和题目理解困难；在语言学习方面，可能有阅读障碍或者写作困难，如写作文时无话可说、语法错误频繁等。</view>
+            <view class="paragraph">建议学生可以寻找学习资源，参加学习活动，拓展自己的知识面。同时，学生也需要注意自己的学习习惯，避免拖延和懒惰。</view>
+          </view>
+
+          <view class="paragraph-group">
+            <view class="paragraph">另外，学生也需要了解自己的学习能力，避免过度的自我期望。建议学生可以设定合理的学习目标，保持学习的连贯性。</view>
+            <view class="paragraph">同时，学生也需要注意自己的心理健康，避免过度的压力和焦虑。建议学生可以寻找心理咨询，参加心理健康活动，保持自己的心理健康。</view>
+          </view>
+        </view>
+
+        <view class="subsection">
+          <view class="subtitle">4. 学习习惯和方法不当</view>
+          <view class="paragraph-group">
+            <view class="paragraph">很多学生没有养成良好的学习习惯，比如不会合理安排时间，总是拖延完成作业或者复习任务。在学习方法上，可能只会死记硬背，不懂得总结归纳，导致学习效率低下。例如，有些学生在背诵历史事件时，只是机械地记忆时间、人物和事件，却不能理解事件之间的因果关系和历史背景。</view>
+            <view class="paragraph">建议学生可以使用番茄工作法，设定学习计划，保持学习的连贯性。同时，学生也需要注意自己的学习习惯，避免拖延和懒惰。</view>
+          </view>
+
+          <view class="paragraph-group">
+            <view class="paragraph">另外，学生也需要了解自己的学习能力，避免过度的自我期望。建议学生可以设定合理的学习目标，保持学习的连贯性。</view>
+            <view class="paragraph">同时，学生也需要注意自己的心理健康，避免过度的压力和焦虑。建议学生可以寻找心理咨询，参加心理健康活动，保持自己的心理健康。</view>
+          </view>
+        </view>
+      </view>
+
+      <!-- 人际关系方面 -->
+      <view class="section">
+        <view class="section-title">二、人际关系方面</view>
+        
+        <view class="subsection">
+          <view class="subtitle">1. 与同学关系紧张</view>
+          <view class="paragraph-group">
+            <view class="paragraph">同学之间可能会因为性格差异、竞争关系或者误会而产生矛盾。例如，在宿舍生活中，有的学生比较自我，不考虑他人感受，如在休息时间大声喧哗，导致与室友关系恶化；或者在班级中，因为成绩排名等竞争因素，被同学嫉妒或者嫉妒其他同学，产生冲突。</view>
+            <view class="paragraph">建议学生可以尝试沟通，解决矛盾。同时，学生也需要注意自己的行为，避免伤害他人。</view>
+          </view>
+
+          <view class="paragraph-group">
+            <view class="paragraph">另外，学生也需要了解自己的性格，避免过度的自我中心。建议学生可以参加团队活动，拓展自己的社交圈。</view>
+            <view class="paragraph">同时，学生也需要注意自己的心理健康，避免过度的压力和焦虑。建议学生可以寻找心理咨询，参加心理健康活动，保持自己的心理健康。</view>
+          </view>
+        </view>
+
+        <view class="subsection">
+          <view class="subtitle">2. 师生关系问题</view>
+          <view class="paragraph-group">
+            <view class="paragraph">有些学生可能不适应某位老师的教学风格，从而影响学习情绪。比如，老师教学进度过快或者讲解不够清晰，学生跟不上节奏又不敢向老师反馈。还有可能是学生与老师之间产生了误会，例如被老师误解在课堂上捣乱，导致学生心理产生抵触情绪。</view>
+            <view class="paragraph">建议学生可以尝试沟通，解决问题。同时，学生也需要注意自己的行为，避免伤害他人。</view>
+          </view>
+
+          <view class="paragraph-group">
+            <view class="paragraph">另外，学生也需要了解自己的学习能力，避免过度的自我期望。建议学生可以设定合理的学习目标，保持学习的连贯性。</view>
+            <view class="paragraph">同时，学生也需要注意自己的心理健康，避免过度的压力和焦虑。建议学生可以寻找心理咨询，参加心理健康活动，保持自己的心理健康。</view>
+          </view>
+        </view>
+
+        <view class="subsection">
+          <view class="subtitle">3. 亲子关系困扰</view>
+          <view class="paragraph-group">
+            <view class="paragraph">在青春期的学生尤其容易出现亲子关系问题。比如父母对孩子的期望过高，孩子觉得压力巨大；或者孩子想要独立，与父母的管束产生冲突。例如，孩子想要参加一些社交活动，如同学聚会，但父母担心安全问题而不允许，从而引发争吵和矛盾。</view>
+            <view class="paragraph">建议学生可以尝试沟通，解决问题。同时，学生也需要注意自己的行为，避免伤害他人。</view>
+          </view>
+
+          <view class="paragraph-group">
+            <view class="paragraph">另外，学生也需要了解自己的性格，避免过度的自我中心。建议学生可以参加团队活动，拓展自己的社交圈。</view>
+            <view class="paragraph">同时，学生也需要注意自己的心理健康，避免过度的压力和焦虑。建议学生可以寻找心理咨询，参加心理健康活动，保持自己的心理健康。</view>
+          </view>
+        </view>
+      </view>
+
+      <!-- 情绪和心理方面 -->
+      <view class="section">
+        <view class="section-title">三、情绪和心理方面</view>
+        
+        <view class="subsection">
+          <view class="subtitle">1. 情绪管理问题</view>
+          <view class="paragraph-group">
+            <view class="paragraph">学生可能无法很好地控制自己的情绪。比如容易愤怒，在遇到不如意的事情时，如被同学嘲笑或者在比赛中失利，就会大发脾气。或者容易陷入悲伤情绪无法自拔，例如在经历宠物死亡、与好朋友分别等情况后，长时间处于低落情绪中。</view>
+            <view class="paragraph">建议学生可以尝试放松自己的心情，多参加户外活动，保持健康的生活方式。同时，学生也需要注意自己的心理健康，避免过度的压力和焦虑。</view>
+          </view>
+
+          <view class="paragraph-group">
+            <view class="paragraph">另外，学生也需要了解自己的情绪，避免过度的自我期望。建议学生可以设定合理的目标，保持学习的连贯性。</view>
+            <view class="paragraph">同时，学生也需要注意自己的行为，避免伤害他人。建议学生可以参加团队活动，拓展自己的社交圈。</view>
+          </view>
+        </view>
+
+        <view class="subsection">
+          <view class="subtitle">2. 焦虑和抑郁倾向</view>
+          <view class="paragraph-group">
+            <view class="paragraph">由于学习压力、人际关系等多种因素，部分学生可能会出现焦虑和抑郁的倾向。焦虑的学生可能会经常担心未来，如担心自己考不上好学校、找不到好工作等。抑郁倾向的学生可能会出现自我评价过低、对周围事物失去兴趣、食欲和睡眠改变等症状。</view>
+            <view class="paragraph">建议学生可以寻找心理咨询，参加心理健康活动，保持自己的心理健康。同时，学生也需要注意自己的行为，避免伤害他人。</view>
+          </view>
+
+          <view class="paragraph-group">
+            <view class="paragraph">另外，学生也需要了解自己的性格，避免过度的自我中心。建议学生可以参加团队活动，拓展自己的社交圈。</view>
+            <view class="paragraph">同时，学生也需要注意自己的心理健康，避免过度的压力和焦虑。建议学生可以寻找心理咨询，参加心理健康活动，保持自己的心理健康。</view>
+          </view>
+        </view>
+
+        <view class="subsection">
+          <view class="subtitle">3. 自我认知困惑</view>
+          <view class="paragraph-group">
+            <view class="paragraph">学生在成长过程中会对自己产生很多疑问。比如不知道自己的兴趣爱好是什么，在选择兴趣班或者专业时感到迷茫。还有对自己的性格和能力的认知也可能存在困惑，如觉得自己不够聪明或者不够漂亮，产生自卑心理。</view>
+            <view class="paragraph">建议学生可以尝试参加团队活动，拓展自己的社交圈。同时，学生也需要注意自己的行为，避免伤害他人。</view>
+          </view>
+
+          <view class="paragraph-group">
+            <view class="paragraph">另外，学生也需要了解自己的性格，避免过度的自我中心。建议学生可以参加团队活动，拓展自己的社交圈。</view>
+            <view class="paragraph">同时，学生也需要注意自己的心理健康，避免过度的压力和焦虑。建议学生可以寻找心理咨询，参加心理健康活动，保持自己的心理健康。</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+</view>
